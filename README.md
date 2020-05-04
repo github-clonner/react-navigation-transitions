@@ -16,6 +16,8 @@ These functions are meant to be used as the `transitionConfig` with [react-navig
 
 `fadeIn`
 
+`fadeout`
+
 `zoomIn`
 
 `zoomOut`
@@ -89,6 +91,10 @@ const PrimaryNav = createStackNavigator({
   transitionConfig: (nav) => handleCustomTransition(nav)
 })
 ```
+
+## Use with SafeAreaView
+
+If you are having trouble with `SafeAreaView` like in this [issue](https://github.com/plmok61/react-navigation-transitions/issues/11), try adding `forceInset={{ top: 'always', bottom: 'always' }}`
 
 ## GIFS
 
